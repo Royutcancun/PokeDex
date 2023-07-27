@@ -72,38 +72,9 @@ h1 {
     max-width: 90%;
 }
 
-/* tarjeta expandida */
-
-.pokemon.expanded {
-    width: 300px;
-    height: auto;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    transition: width 0.3s ease;
-}
-
 .pokemon .info {
     margin-top: 20px;
     overflow: hidden;
-}
-
-.pokemon.expanded .info {
-    height: auto;
-}
-
-.pokemon.expanded .expand-btn {
-    display: none;
-}
-
-.pokemon .extra-info {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
-
-.pokemon.expanded .extra-info {
-    display: block;
 }
 
 
@@ -120,3 +91,52 @@ h1 {
     color: #fff;
     font-size: 1.2rem;
 }
+
+/* Estilo general del modal */
+.modal-content {
+    background-color: #3c4059;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header {
+    background-color: #574e76;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+  }
+  
+  .modal-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8rem;
+  }
+  
+  .modal-body {
+    background-color: #2d3142;
+    color: #fff;
+  }
+  
+  .modal-body p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .modal-body span {
+    color: #FFB800;
+  }
+  
+  .modal-footer {
+    background-color: #574e76;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  
+  .btn-close {
+    color: #fff;
+    text-shadow: 2px 2px 0 #FFB800, -2px -2px 0 #FFB800, 2px -2px 0 #FFB800, -2px 2px 0 #FFB800;
+  }
+  
+  
+  @media (max-width: 576px) {
+    .modal-dialog {
+      max-width: 90%;
+    }
+  }
