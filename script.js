@@ -30,6 +30,8 @@ const createPokemonCard = pokemon => {
             <span class="number">${id}</span>
             <h3 class="name">${name}</h3>
             <small class="type">Type: <span>${type}</span></small>
+            <br>
+            <button class="btn btn-primary-sm">Ver más</button>
         </div>
         `;
 
